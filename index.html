@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QdAndy</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a Bootstrap CSS (CDN) para hacer la página responsive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="profile_picture.jpg" type="jpg">
+</head>
+<body style="background-color: #008080";>
+
+<!-- Cobertura inicial -->
+<div id="cover" class="cover"></div>
+
+  <!-- Contenedor del GIF (se muestra al principio) -->
+  <div id="gif-container">
+    <img id="start-gif" src="eyets.gif" alt="GIF de inicio">
+</div>
+  <!-- Sección 1: Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-gray sticky-top">
+    <div class="container">
+        <!-- Logo y Nombre -->
+        <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center"> <!-- Utilizamos d-flex para crear un contenedor flex -->
+                <img src="profile_picture.jpg" alt="Logo" width="80" height="auto" class="rounded-circle mr-3" style="border: 2px solid #000; margin-right: 15px;">
+                <h1 class="mb-0">QdAndy</h1> <!-- Utilizamos mb-0 para eliminar el margen inferior en el nombre -->
+            </div>
+        </a>
+
+        <!-- Botón de Menú para Pantallas Pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces de Navegación -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                    <a class="nav-link" href="#home" data-target="home" data-seccion="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me" data-target="about-me" data-seccion="about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq" data-target="faq" data-seccion="faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-info" data-target="contact-info" data-seccion="contact-info">Contact Info</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#Fan-Art" data-target="Fan-Art" data-seccion="Fan-Art">FanArt</a>
+                </li>
+
+                <!-- Agrega más botones de navegación aquí -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- **Sección 2: Contenedor Principal HOME** --> 
+  <div class="container mt-5" id="home" style="display: block;">
+    <div class="row">
+         <!-- Subsección 1: Columna Izquierda con Iconos -->
+            <div class="col-md-4">
+    <!-- Fila 1 de Iconos (2 Columnas) -->
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <a href="https://www.youtube.com/c/Qdandy" target="_blank">
+                <img src="youtube.png" alt="Icon 1" class="icon-square">
+                <p>YOUTUBE</p>
+            </a>
+        </div>
+        <div class="col-md-6 text-center">
+            <a href="https://www.tiktok.com/@qdandy?" target="_blank">
+                <img src="TIKTOK.png" alt="Icon 2" class="icon-square">
+                <p>TIKTOK</p>
+            </a>
+        </div>
+    </div>
+    <!-- Fila 2 de Iconos (2 Columnas) -->
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <a href="https://www.instagram.com/qdandy.tv/" target="_blank">
+                <img src="INSTAGRAM.png" alt="Icon 3" class="icon-square">
+                <p>INSTAGRAM</p>
+            </a>
+        </div>
+        <div class="col-md-6 text-center">
+            <a href="https://www.twitch.tv/qdandytv/" target="_blank">
+                <img src="TWITCH.png" alt="Icon 4" class="icon-square">
+                <p>TWITCH</p>
+            </a>
+        </div>
+    </div>
+    <!-- Fila 3 de Iconos (2 Columnas) -->
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <a href="https://discord.gg/WZ9NFNtRQ6" target="_blank">
+                <img src="DISCORD.png" alt="Icon 5" class="icon-square">
+                <p>DISCORD</p>
+            </a>
+        </div>
+        <div class="col-md-6 text-center">
+            <a href="https://twitter.com/NotQdandy" target="_blank">
+                <img src="x.png" alt="Icon 6" class="icon-square">
+                <p>X</p>
+            </a>
+        </div>
+    </div>
+            </div>
+
+<!-- Subsección 2: Columna Derecha con Carrusel de Imágenes -->
+<div class="col-md-8 d-md-block d-none" style="position: relative;">
+    <!-- Imagen de Fondo (container.png) -->
+    <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image2" style="position: absolute; z-index: 0;">
+
+    <!-- Carrusel de Imágenes -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" style="position: relative;">
+        <!-- Indicadores del Carrusel -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#imageCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#imageCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#imageCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#imageCarousel" data-bs-slide-to="4"></li>
+        </ol>
+
+        <!-- Imágenes del Carrusel -->
+        <div class="carousel-inner">
+            <!-- Imagen 1 (Activa por defecto) -->
+            <div class="carousel-item active">
+                <a href="https://youtu.be/xORYOQPp-3U?si=a731GoXy9cXGttDM" target="_blank">
+                    <img src="THUMBNAILS/new t 1.png" alt="Imagen 1">
+                </a>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="carousel-item">
+                <a href="https://youtu.be/Qh_JqVpvqbI?si=BEpJ1Pjm3qm7ECPc" target="_blank">
+                    <img src="THUMBNAILS/NEW T w.png" alt="Imagen 2">
+                </a>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="carousel-item">
+                <a href="https://youtu.be/XTpnbNwCSGs?si=j0ec7045syp57Lt4" target="_blank">
+                    <img src="THUMBNAILS/t1.png" alt="Imagen 3">
+                </a>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="carousel-item">
+                <a href="https://youtu.be/QC6qAiEEDds?si=RpE7D_xSQ-hn-zh9" target="_blank">
+                    <img src="THUMBNAILS/T4.png" alt="Imagen 4">
+                </a>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="carousel-item">
+                <a href="https://youtu.be/aDa0uuTApsQ?si=sGfR20raB946yrOG" target="_blank">
+                    <img src="THUMBNAILS/ttt2.png" alt="Imagen 5">
+                </a>
+            </div>
+        </div>
+
+        <!-- Controles del Carrusel -->
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+
+        
+     </div>
+ </div>
+
+<!-- Sección 4: About Me -->
+<div id="about-me" class="container mt-5" style="display: none;">
+    <h2>About Me</h2>
+    <div class="row">
+        <!-- Primera Imagen (2/3 de ancho) -->
+        <div class="col-md-8">
+            <div class="img-container">
+                <img src="CONTAINER.png" alt="Imagen 1" class="img-fluid bg-image">
+                <div class="overlay-text">
+                    <p>
+                        Hello there!<br>
+                        I'm a Minecraft animator that mainly does shorts. Specialist in Loop videos 🧐<br>
+                        I created my channel back in 2013 when I was just a kid.<br>
+                        My primary goal has always been to craft experiences that resonate with people.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda Imagen (1/3 de ancho) -->
+        <div class="col-md-4">
+            <img src="me1.png" alt="Imagen 2" class="me">
+        </div>
+    </div>
+</div>
+
+
+<!-- Sección 5: FAQ -->
+<div id="faq" class="container mt-5" style="display: none;">
+    <h2>Frequently Asked Questions</h2>
+    <div class="row">
+        <!-- Primera Imagen (1/3 de ancho a la izquierda) -->
+        <div class="col-md-4">
+            <img src="me2.png" alt="Imagen 4" class="me">
+        </div>
+        <!-- Contenedor de Imagen (2/3 de ancho a la derecha) -->
+        <div class="col-md-8">
+            <div class="faq-image-container">
+                <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image">
+                <div class="faq-text">
+                    <!-- Pregunta 1 -->
+                    <p class="faq-question" style="color: #ff0081;">What software do you use for animation?</p>
+                    <p class="faq-answer">Blender</p>
+
+                    <!-- Pregunta 2 -->
+                    <p class="faq-question" style="color: #ff0081;">Who inspired you to start animating?</p>
+                    <p class="faq-answer">I was inspired by YouTube channels like Jaiden Animations and TheOdd1sOut.</p>
+
+                    <!-- Pregunta 3 -->
+                    <p class="faq-question" style="color: #ff0081;">How did you start animating?</p>
+                    <p class="faq-answer">I literally went on YouTube and searched "how to make Minecraft animations."</p>
+
+                    <!-- Pregunta 4 -->
+                    <p class="faq-question" style="color: #ff0081;">What inspires you to create content?</p>
+                    <p class="faq-answer">I've always enjoyed creating things for others to enjoy. I like to see reactions to what I make.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección 6: Contact Info -->
+<div id="contact-info" class="container mt-5" style="display: none;">
+    <h2>Contact Info</h2>
+    <div class="row">
+        <!-- Contenedor (ancho completo) -->
+        <div class="col-md-12 text-center">
+            <div class="contact-container">
+                <img src="me3.png" alt="Imagen 6" class="me">
+                <div class="contact-text">
+                    <p style="color: #010081;">For business inquiries</p>
+                    <a href="mailto:QdAndy44@gmail.com" style="color: black; text-decoration: none; font-family: 'OLD';">
+                        QdAndy44@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Sección 7: Secret Files -->
+<div id="secret-files" class="container mt-5" style="display: none;">
+    <div class="row">
+        <!-- Subsección 1: Columna Izquierda con Iconos -->
+       <div class="col-md-4">
+<!-- Fila 1 de Iconos (2 Columnas) -->
+<div class="row">
+   <div class="col-md-6 text-center">
+       <a href="https://www.youtube.com/c/Qdandy" target="_blank">
+           <img src="youtube.png" alt="Icon 1" class="icon-square">
+           <p>YOUTUBE</p>
+       </a>
+   </div>
+   <div class="col-md-6 text-center">
+       <a href="https://www.tiktok.com/@qdandy?" target="_blank">
+           <img src="TIKTOK.png" alt="Icon 2" class="icon-square">
+           <p>TIKTOK</p>
+       </a>
+   </div>
+</div>
+<!-- Fila 2 de Iconos (2 Columnas) -->
+<div class="row">
+   <div class="col-md-6 text-center">
+       <a href="enlace_red_social_3" target="_blank">
+           <img src="INSTAGRAM.png" alt="Icon 3" class="icon-square">
+           <p>INSTAGRAM</p>
+       </a>
+   </div>
+   <div class="col-md-6 text-center">
+       <a href="https://www.twitch.tv/qdandytv/" target="_blank">
+           <img src="TWITCH.png" alt="Icon 4" class="icon-square">
+           <p>TWITCH</p>
+       </a>
+   </div>
+</div>
+<!-- Fila 3 de Iconos (2 Columnas) -->
+<div class="row">
+   <div class="col-md-6 text-center">
+       <a href="https://discord.gg/WZ9NFNtRQ6" target="_blank">
+           <img src="DISCORD.png" alt="Icon 5" class="icon-square">
+           <p>DISCORD</p>
+       </a>
+   </div>
+   <div class="col-md-6 text-center">
+       <a href="enlace_red_social_6" target="_blank">
+           <img src="PATREON.png" alt="Icon 6" class="icon-square">
+           <p>PATREON</p>
+       </a>
+   </div>
+</div>
+   </div>
+
+   <!-- Subsección 2: Columna Derecha con Imagen de Fondo -->
+   <div class="col-md-8">
+       <div class="bg-cyan">
+           <!-- Imagen de Fondo -->
+           <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image">
+
+           <!-- Carrusel de Imágenes -->
+           <!-- Agrega aquí el carrusel de imágenes -->
+
+       </div>
+   </div>
+
+   
+        </div>
+</div>
+
+<!-- Sección FanArt -->
+<div id="Fan-Art" class="container mt-5" style="display: none;">
+    <h2>FanArt</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="fanart-grid">
+                <!-- Aquí colocarás tus imágenes de FanArt -->
+                <img src="FANARTS/Used/1.png" alt="FanArt 1" class="fanart-item">
+                <img src="FANARTS/Used/2.png" alt="FanArt 2" class="fanart-item">
+                <img src="FANARTS/Used/3.png" alt="FanArt 3" class="fanart-item">
+                <img src="FANARTS/Used/4.png" alt="FanArt 4" class="fanart-item">
+                <img src="FANARTS/Used/5.png" alt="FanArt 5" class="fanart-item">
+                <img src="FANARTS/Used/6.png" alt="FanArt 6" class="fanart-item">
+                <img src="FANARTS/Used/7.png" alt="FanArt 7" class="fanart-item">
+                <img src="FANARTS/Used/8.png" alt="FanArt 8" class="fanart-item">
+                <img src="FANARTS/Used/9.png" alt="FanArt 9" class="fanart-item">
+                <img src="FANARTS/Used/10.png" alt="FanArt 10" class="fanart-item">
+                <img src="FANARTS/Used/11.png" alt="FanArt 11" class="fanart-item">
+                <img src="FANARTS/Used/12.png" alt="FanArt 12" class="fanart-item">
+                <img src="FANARTS/Used/13.png" alt="FanArt 13" class="fanart-item">
+                <img src="FANARTS/Used/14.png" alt="FanArt 14" class="fanart-item">
+                <img src="FANARTS/Used/15.png" alt="FanArt 15" class="fanart-item">
+                <img src="FANARTS/Used/16.png" alt="FanArt 16" class="fanart-item">
+                <img src="FANARTS/Used/17.png" alt="FanArt 17" class="fanart-item">
+                <img src="FANARTS/Used/18.png" alt="FanArt 18" class="fanart-item">
+                <img src="FANARTS/Used/19.png" alt="FanArt 19" class="fanart-item">
+                <img src="FANARTS/Used/20.png" alt="FanArt 20" class="fanart-item">
+                <img src="FANARTS/Used/21.png" alt="FanArt 21" class="fanart-item">
+                <img src="FANARTS/Used/22.png" alt="FanArt 22" class="fanart-item">
+                <img src="FANARTS/Used/23.png" alt="FanArt 23" class="fanart-item">
+                <img src="FANARTS/Used/24.png" alt="FanArt 24" class="fanart-item">
+                <img src="FANARTS/Used/25.png" alt="FanArt 25" class="fanart-item">
+                <img src="FANARTS/Used/26.png" alt="FanArt 26" class="fanart-item">
+                <img src="FANARTS/Used/27.png" alt="FanArt 27" class="fanart-item">
+                <img src="FANARTS/Used/28.png" alt="FanArt 28" class="fanart-item">
+                <img src="FANARTS/Used/29.png" alt="FanArt 29" class="fanart-item">
+                <img src="FANARTS/Used/30.png" alt="FanArt 30" class="fanart-item">
+                <img src="FANARTS/Used/31.png" alt="FanArt 31" class="fanart-item">
+                <img src="FANARTS/Used/32.png" alt="FanArt 32" class="fanart-item">
+                <img src="FANARTS/Used/33.png" alt="FanArt 33" class="fanart-item">
+                <img src="FANARTS/Used/34.png" alt="FanArt 34" class="fanart-item">
+                <img src="FANARTS/Used/35.png" alt="FanArt 35" class="fanart-item">
+                <img src="FANARTS/Used/36.png" alt="FanArt 36" class="fanart-item">
+                <img src="FANARTS/Used/37.png" alt="FanArt 37" class="fanart-item">
+                <img src="FANARTS/Used/38.png" alt="FanArt 38" class="fanart-item">
+                <img src="FANARTS/Used/39.png" alt="FanArt 39" class="fanart-item">
+                <img src="FANARTS/Used/40.png" alt="FanArt 40" class="fanart-item">
+                <img src="FANARTS/Used/41.png" alt="FanArt 41" class="fanart-item">
+                <img src="FANARTS/Used/42.png" alt="FanArt 42" class="fanart-item">
+                <img src="FANARTS/Used/43.png" alt="FanArt 43" class="fanart-item">
+                <img src="FANARTS/Used/44.png" alt="FanArt 44" class="fanart-item">
+                <img src="FANARTS/Used/45.png" alt="FanArt 45" class="fanart-item">
+                <img src="FANARTS/Used/48.png" alt="FanArt 48" class="fanart-item">
+                <img src="FANARTS/Used/49.png" alt="FanArt 49" class="fanart-item">
+                <img src="FANARTS/Used/50.png" alt="FanArt 50" class="fanart-item">
+                <img src="FANARTS/Used/51.png" alt="FanArt 51" class="fanart-item">
+                <img src="FANARTS/Used/52.png" alt="FanArt 52" class="fanart-item">
+                <img src="FANARTS/Used/53.png" alt="FanArt 53" class="fanart-item">
+                <img src="FANARTS/Used/54.png" alt="FanArt 54" class="fanart-item">
+                <img src="FANARTS/Used/55.png" alt="FanArt 55" class="fanart-item">
+                <img src="FANARTS/Used/56.png" alt="FanArt 56" class="fanart-item">
+                <img src="FANARTS/Used/57.png" alt="FanArt 57" class="fanart-item">
+                <img src="FANARTS/Used/58.png" alt="FanArt 58" class="fanart-item">
+                <img src="FANARTS/Used/59.png" alt="FanArt 59" class="fanart-item">
+                <img src="FANARTS/Used/60.png" alt="FanArt 60" class="fanart-item">
+                <img src="FANARTS/Used/61.png" alt="FanArt 61" class="fanart-item">
+                <!-- Agrega más imágenes aquí -->
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- **Sección 3: Pie de Página (Footer) -->
+    <footer class="bg-gray text-center py-3">
+        © 2023 QdAndy
+    </footer>
+
+    <!-- Scripts de Bootstrap (jQuery y Popper.js son requeridos para Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+    <script> 
+// Función para ocultar el GIF suavemente después de 2 segundos
+setTimeout(function() {
+            const gifContainer = document.getElementById('gif-container');
+            gifContainer.style.opacity = '0'; // Hace que el GIF sea invisible
+            if (gifContainer.style.opacity == '0'){gifContainer.style.display = "none";}
+        }, 4000); // 2000 milisegundos = 2 segundos
+
+
+
+
+
+    // Función para ocultar todas las secciones excepto la especificada
+
+
+    function mostrarSeccion(seccionId) {
+        const secciones = ["home", "about-me", "faq", "contact-info", "secret-files", "Fan-Art"];
+
+        secciones.forEach((seccion) => {
+            const elemento = document.getElementById(seccion);
+            if (seccion === seccionId) {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        });
+    }
+
+    // Función para manejar los clics en los botones de la barra de navegación
+    function manejarNavegacion(event) {
+        const target = event.target;
+        const sectionId = target.getAttribute('data-target');
+        mostrarSeccion(sectionId);
+        scrollToSection(sectionId); // Desplazar suavemente a la sección deseada
+    }
+
+    // Agregar eventos de clic a los botones de navegación
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', manejarNavegacion);
+    });
+    
+
+
+        function copyToClipboard(text) {
+    const tempElement = document.createElement("textarea");
+    tempElement.value = text;
+    document.body.appendChild(tempElement);
+    tempElement.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempElement);
+}
+
+// Agrega un evento de clic al enlace de correo electrónico
+document.querySelector("a[href='mailto:QdAndy44@gmail.com']").addEventListener("click", function (event) {
+    event.preventDefault(); // Previene el comportamiento predeterminado del enlace
+    copyToClipboard("QdAndy44@gmail.com"); // Copia el correo al portapapeles
+    alert("Correo electrónico copiado al portapapeles: QdAndy44@gmail.com");
+});
+
+
+    </script>
+</body>
+</html>
+

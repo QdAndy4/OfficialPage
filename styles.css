@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'OLD'; /* Replace with your font's name */
+    src: url('depixelhalbfett.woff') format('woff'); /* Replace with the path to your font file */
+}
+/* Estilos generales para la página */
+body {
+    background-color: #008080; /* Color de fondo de la página */
+    font-family: Arial, sans-serif; /* Fuente de texto predeterminada */
+}
+h1{
+    font-family: 'OLD';
+}
+h2{
+    font-family: 'OLD';
+    text-align: center;
+    padding: 20PX;
+}
+p{
+    font-family: 'OLD';
+    color: black;
+    text-decoration: none; /* Quita el subrayado */
+   
+}
+.navbar {
+    background-color: #c3c3c3; /* Cambia el color de fondo a #c3c3c3 */
+    position: fixed;
+    top: 0; /* Arriba de la página */
+}
+/* Estilos para los botones de la barra de navegación */
+.nav-link {
+    background-color: #818181; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    border: 1px solid #222; /* Borde con color más oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 10px; /* Espacio entre botones */
+    font-family: 'OLD';
+}
+.nav-item
+{
+    font-family: 'OLD';
+}
+
+.navbar-brand {
+    color: #ffffff; /* Color del texto del logo y nombre */
+    font-weight: bold;
+    max-width: 25px; /* Ajusta el tamaño máximo del logo según tus preferencias */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Color de fondo del icono de menú */
+}
+
+
+.nav-link:hover {
+    font-size: 20px; /* Tamaño de fuente más grande al pasar el cursor */
+}
+
+/* Estilos para los iconos cuadrados */
+.icon-square {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Tamaño cuadrado de los iconos */
+    margin-bottom: 10px;
+}
+
+/* Estilos para la columna derecha (Imagen de fondo) */
+.bg-cyan {
+    background-color: #008080; /* Color de fondo de la columna derecha */
+}
+.img-fluid.bg-image2 {
+    /* home CARRUSEL*/
+    margin-left: 60PX;
+    width: 716px; /* Mantener el ancho automático */
+    height: 450px;
+    margin-bottom: 40px;
+}
+.img-fluid.bg-image {
+    /* Estilos para la imagen de fondo */
+    width: 900px; /* Mantener el ancho automático */
+    height: 450px;
+    margin-bottom: 40px;
+}
+.carousel-item img {
+    margin-left: 65px;
+    margin-top: 48px;
+    width: 700px; /* Ancho del 100% para adaptarse al contenedor */
+    height: 394px; /* Altura automática para mantener la proporción */
+    object-fit: fill; /* Ajusta la imagen manteniendo su relación de aspecto */
+}
+
+.me {
+    height: 450px; /* Ajusta la altura según tus preferencias */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+}
+.img-fluid
+{
+ height: 50%;
+}
+/* Estilos para el pie de página (Footer) */
+footer {
+    color: #ffffff; /* Color del texto del pie de página */
+    background-color: #808080; /* Color de fondo del pie de página */
+    margin-top: 40px;
+}
+.social-media-names {
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font followed by a fallback font */
+    color: black; /* Set the color to black */
+}
+.container2
+{
+    width: 900px; /* Mantener el ancho automático */
+    height: 650px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+
+/* Estilos para la superposición de texto en la imagen de fondo de "About Me" */
+.img-container {
+    position: relative;
+}
+
+.overlay-text {
+   
+    position: absolute;
+    text-align: center;
+    margin-top: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000000; /* Color del texto */
+    padding: 20px; /* Espaciado interno alrededor del texto */
+    overflow: auto; /* Agregar barras de desplazamiento si el contenido es demasiado largo */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    line-height: 3; /* Espaciado entre líneas del texto */
+    z-index: 1; /* Asegurar que el texto esté sobre la imagen de fondo */
+}
+
+.overlay-text p {
+    margin: 0; /* Eliminar márgenes predeterminados del párrafo */
+}
+
+
+
+/* CSS for FAQ Section */
+.faq-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.faq-text {
+    
+    opacity: 1; /* Los elementos son inicialmente invisibles */
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 100%; /* Ensure the text doesn't overflow the image */
+}
+
+/* Style for FAQ Questions */
+.faq-question {
+    
+    color: #ff0081;
+    font-weight: bold;
+}
+
+/* Style for FAQ Answers */
+.faq-answer {
+    color: #000; /* You can adjust the color as needed */
+}
+
+.faq-question.visible,
+.faq-answer.visible {
+    opacity: 1; /* Los elementos se vuelven visibles */
+    transform: translateY(0); /* Los elementos vuelven a su posición original */
+}
+
+.contact-text
+{
+    text-align: center;
+}
+
+/* Estilos para la sección FanArt */
+#fanart {
+    text-align: center;
+}
+
+/* Estilos para la cuadrícula de FanArt */
+.fanart-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en la cuadrícula */
+    grid-gap: 5px; /* Espacio entre imágenes */
+    justify-items: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para las imágenes de FanArt */
+.fanart-item {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Asegúrate de que el video llene la pantalla */
+#full-screen-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .me {
+        display: none;
+    }
+    .faq-text {
+        font-size: 10px; /* Adjust the font size as needed */
+    }
+    .overlay-text {
+        font-size: 10px; /* Adjust the font size as needed */
+    }
+}
+        /* Estilo para el contenedor del GIF */
+        #gif-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* Color de fondo (puedes cambiarlo) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Asegura que esté en la parte superior */
+            animation: fadeOut 2s ease-in-out 2s forwards; /* Inicia la animación después de 2 segundos */
+        }
+        
+        /* Estilo para el GIF */
+        #start-gif {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene la relación de aspecto del GIF */
+        }
+
+        /* Animación para desvanecer el contenedor */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                pointer-events: none; /* Deshabilita la interacción con el contenido */
+            }
+        }
