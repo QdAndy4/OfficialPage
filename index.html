@@ -42,17 +42,19 @@
                     <a class="nav-link" href="#home" data-target="home" data-seccion="">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-me" data-target="about-me" data-seccion="about-me">About Me</a>
+                    <a class="nav-link" href="#portfolio" data-target="portfolio" data-seccion="portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#faq" data-target="faq" data-seccion="faq">FAQ</a>
+                    <a class="nav-link" href="#about-me" data-target="about-me" data-seccion="about-me">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact-info" data-target="contact-info" data-seccion="contact-info">Contact Info</a>
                 </li>
-               
                 <li class="nav-item">
-                    <a class="nav-link" href="#Fan-Art" data-target="Fan-Art" data-seccion="Fan-Art">FanArt</a>
+                    <a class="nav-link" href="#fan-Art" data-target="fan-Art" data-seccion="fan-Art">FanArt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery" data-target="gallery" data-seccion="gallery">Gallery</a>
                 </li>
 
                 <!-- Agrega más botones de navegación aquí -->
@@ -183,7 +185,7 @@
      </div>
  </div>
 
-<!-- Sección 4: About Me -->
+<!-- Sección 4: About Me y FAQ -->
 <div id="about-me" class="container mt-5" style="display: none;">
     <h2>About Me</h2>
     <div class="row">
@@ -197,7 +199,6 @@
                         I'm a Minecraft animator that mainly does shorts. Specialist in Loop videos 🧐<br>
                         I created my channel back in 2013 when I was just a kid.<br>
                         My primary goal has always been to craft experiences that resonate with people.
-
                     </p>
                 </div>
             </div>
@@ -207,43 +208,42 @@
             <img src="me1.png" alt="Imagen 2" class="me">
         </div>
     </div>
-</div>
+    
+    <!-- FAQ Section -->
+    <div class="container mt-5">
+        <h2>Frequently Asked Questions</h2>
+        <div class="row">
+            <!-- Primera Imagen (1/3 de ancho a la izquierda) -->
+            <div class="col-md-4">
+                <img src="me2.png" alt="Imagen 4" class="me">
+            </div>
+            <!-- Contenedor de Imagen (2/3 de ancho a la derecha) -->
+            <div class="col-md-8">
+                <div class="faq-image-container">
+                    <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image">
+                    <div class="faq-text">
+                        <!-- Pregunta 1 -->
+                        <p class="faq-question" style="color: #ff0081;">What software do you use for animation?</p>
+                        <p class="faq-answer">Blender</p>
 
+                        <!-- Pregunta 2 -->
+                        <p class="faq-question" style="color: #ff0081;">Who inspired you to start animating?</p>
+                        <p class="faq-answer">I was inspired by YouTube channels like Jaiden Animations and TheOdd1sOut.</p>
 
-<!-- Sección 5: FAQ -->
-<div id="faq" class="container mt-5" style="display: none;">
-    <h2>Frequently Asked Questions</h2>
-    <div class="row">
-        <!-- Primera Imagen (1/3 de ancho a la izquierda) -->
-        <div class="col-md-4">
-            <img src="me2.png" alt="Imagen 4" class="me">
-        </div>
-        <!-- Contenedor de Imagen (2/3 de ancho a la derecha) -->
-        <div class="col-md-8">
-            <div class="faq-image-container">
-                <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image">
-                <div class="faq-text">
-                    <!-- Pregunta 1 -->
-                    <p class="faq-question" style="color: #ff0081;">What software do you use for animation?</p>
-                    <p class="faq-answer">Blender</p>
+                        <!-- Pregunta 3 -->
+                        <p class="faq-question" style="color: #ff0081;">How did you start animating?</p>
+                        <p class="faq-answer">I literally went on YouTube and searched "how to make Minecraft animations."</p>
 
-                    <!-- Pregunta 2 -->
-                    <p class="faq-question" style="color: #ff0081;">Who inspired you to start animating?</p>
-                    <p class="faq-answer">I was inspired by YouTube channels like Jaiden Animations and TheOdd1sOut.</p>
-
-                    <!-- Pregunta 3 -->
-                    <p class="faq-question" style="color: #ff0081;">How did you start animating?</p>
-                    <p class="faq-answer">I literally went on YouTube and searched "how to make Minecraft animations."</p>
-
-                    <!-- Pregunta 4 -->
-                    <p class="faq-question" style="color: #ff0081;">What inspires you to create content?</p>
-                    <p class="faq-answer">I've always enjoyed creating things for others to enjoy. I like to see reactions to what I make.</p>
-
+                        <!-- Pregunta 4 -->
+                        <p class="faq-question" style="color: #ff0081;">What inspires you to create content?</p>
+                        <p class="faq-answer">I've always enjoyed creating things for others to enjoy. I like to see reactions to what I make.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Sección 6: Contact Info -->
 <div id="contact-info" class="container mt-5" style="display: none;">
@@ -265,76 +265,166 @@
 </div>
 
 
-<!-- Sección 7: Secret Files -->
-<div id="secret-files" class="container mt-5" style="display: none;">
+<!-- Sección de Portfolio -->
+<div id="portfolio" class="container mt-5" style="display: none;">
+    <!-- Título de la sección -->
+    <h2>Some of my projects</h2>
+
+    <!-- Contenedor 1 con video desde YouTube -->
+    <div class="project-container">
+        <img src="CONTAINER.png" alt="Container 1" class="img-fluid bg-image3">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XcO5ag2EUAM?si=9D8Gl790IDEsf61Y&amp;start=265" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Contenedor 2 con video desde YouTube -->
+    <div class="project-container">
+        <img src="CONTAINER.png" alt="Container 2" class="img-fluid bg-image3">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7UjIWK-CelY?si=KZhHh0-ou51mWxxt&amp;start=365" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Contenedor 3 con video cargado desde PC -->
+    <div class="project-container">
+        <img src="CONTAINER.png" alt="Container 3" class="img-fluid bg-image3">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video controls>
+                <source src="youtube 1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Contenedor 4 con video cargado desde PC -->
+    <div class="project-container">
+        <img src="CONTAINER.png" alt="Container 4" class="img-fluid bg-image3">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video controls>
+                <source src="youtube 2 V2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Contenedor 5 con video cargado desde PC -->
+    <div class="project-container">
+        <img src="CONTAINER.png" alt="Container 5" class="img-fluid bg-image3">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video controls>
+                <source src="youtube 3 v2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Sección de Gallery -->
+<div id="gallery" class="container mt-5" style="display: none;">
     <div class="row">
         <!-- Subsección 1: Columna Izquierda con Iconos -->
-       <div class="col-md-4">
-<!-- Fila 1 de Iconos (2 Columnas) -->
-<div class="row">
-   <div class="col-md-6 text-center">
-       <a href="https://www.youtube.com/c/Qdandy" target="_blank">
-           <img src="youtube.png" alt="Icon 1" class="icon-square">
-           <p>YOUTUBE</p>
-       </a>
-   </div>
-   <div class="col-md-6 text-center">
-       <a href="https://www.tiktok.com/@qdandy?" target="_blank">
-           <img src="TIKTOK.png" alt="Icon 2" class="icon-square">
-           <p>TIKTOK</p>
-       </a>
-   </div>
-</div>
-<!-- Fila 2 de Iconos (2 Columnas) -->
-<div class="row">
-   <div class="col-md-6 text-center">
-       <a href="enlace_red_social_3" target="_blank">
-           <img src="INSTAGRAM.png" alt="Icon 3" class="icon-square">
-           <p>INSTAGRAM</p>
-       </a>
-   </div>
-   <div class="col-md-6 text-center">
-       <a href="https://www.twitch.tv/qdandytv/" target="_blank">
-           <img src="TWITCH.png" alt="Icon 4" class="icon-square">
-           <p>TWITCH</p>
-       </a>
-   </div>
-</div>
-<!-- Fila 3 de Iconos (2 Columnas) -->
-<div class="row">
-   <div class="col-md-6 text-center">
-       <a href="https://discord.gg/WZ9NFNtRQ6" target="_blank">
-           <img src="DISCORD.png" alt="Icon 5" class="icon-square">
-           <p>DISCORD</p>
-       </a>
-   </div>
-   <div class="col-md-6 text-center">
-       <a href="enlace_red_social_6" target="_blank">
-           <img src="PATREON.png" alt="Icon 6" class="icon-square">
-           <p>PATREON</p>
-       </a>
-   </div>
-</div>
-   </div>
-
-   <!-- Subsección 2: Columna Derecha con Imagen de Fondo -->
-   <div class="col-md-8">
-       <div class="bg-cyan">
-           <!-- Imagen de Fondo -->
-           <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image">
-
-           <!-- Carrusel de Imágenes -->
-           <!-- Agrega aquí el carrusel de imágenes -->
-
-       </div>
-   </div>
-
-   
+        <div class="col-md-4">
+            <!-- Fila 1 de Iconos (2 Columnas) -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <a href="#" id="character-records-button">
+                        <img src="carpeta.png" alt="Icon 1" class="icon-square">
+                        <p>Character Records</p>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a target="_blank">
+                        <img src="carpeta.png" alt="Icon 2" class="icon-square">
+                        <p>Journal</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Fila 2 de Iconos (2 Columnas) -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <a target="_blank">
+                        <img src="carpeta.png" alt="Icon 3" class="icon-square">
+                        <p>COMING SOON</p>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a target="_blank">
+                        <img src="carpeta.png" alt="Icon 4" class="icon-square">
+                        <p>COMING SOON</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Fila 3 de Iconos (2 Columnas) -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <a target="_blank">
+                        <img src="carpeta.png" alt="Icon 5" class="icon-square">
+                        <p>COMING SOON</p>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a target="_blank">
+                        <img src="carpeta.png" alt="Icon 6" class="icon-square">
+                        <p>COMING SOON</p>
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <!-- Subsección 2: Columna Derecha con Imagen de Fondo y Contenedor -->
+        <div class="col-md-8">
+            <div class="gallery-bg">
+                <!-- Imagen de Fondo -->
+                <img src="CONTAINER.png" alt="Imagen de Fondo" class="img-fluid bg-image4">
+                
+                <!-- Contenedor para los iconos adicionales -->
+                <div id="additional-icons" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <a target="_blank">
+                                <img src="carpeta.png" alt="Additional Icon 1" class="icon-square2">
+                                <p>COMING SOON</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <a target="_blank">
+                                <img src="carpeta.png" alt="Additional Icon 2" class="icon-square2">
+                                <p>COMING SOON</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+<script>
+    // JavaScript para manejar el clic en "Character Records" y mostrar los iconos adicionales
+    const characterRecordsButton = document.getElementById("character-records-button");
+    const additionalIcons = document.getElementById("additional-icons");
+
+    characterRecordsButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+
+        if (additionalIcons.style.display === "none" || additionalIcons.style.display === "") {
+            additionalIcons.style.display = "block";
+        } else {
+            additionalIcons.style.display = "none";
+        }
+    });
+</script>
+
+
 
 <!-- Sección FanArt -->
-<div id="Fan-Art" class="container mt-5" style="display: none;">
+<div id="fan-Art" class="container mt-5" style="display: none;">
     <h2>FanArt</h2>
     <div class="row">
         <div class="col-md-12">
@@ -416,6 +506,7 @@
 
 
 
+    
     <script> 
 // Función para ocultar el GIF suavemente después de 2 segundos
 setTimeout(function() {
@@ -424,15 +515,11 @@ setTimeout(function() {
             if (gifContainer.style.opacity == '0'){gifContainer.style.display = "none";}
         }, 4000); // 2000 milisegundos = 2 segundos
 
-
-
-
-
     // Función para ocultar todas las secciones excepto la especificada
 
 
     function mostrarSeccion(seccionId) {
-        const secciones = ["home", "about-me", "faq", "contact-info", "secret-files", "Fan-Art"];
+        const secciones = ["home", "portfolio", "about-me", "contact-info", "fan-Art", "gallery"];
 
         secciones.forEach((seccion) => {
             const elemento = document.getElementById(seccion);

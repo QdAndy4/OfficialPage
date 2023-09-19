@@ -76,6 +76,22 @@ p{
     height: 450px;
     margin-bottom: 40px;
 }
+.img-fluid.bg-image3 {
+    /*VIDEOS */
+    margin-left: 60PX;
+    width: 716px; /* Mantener el ancho automático */
+    height: 450px;
+    margin-bottom: 40px;
+}
+
+.img-fluid.bg-image4 {
+    /*gallery */
+    margin-left: 60PX;
+    width: 716px; /* Mantener el ancho automático */
+    height: 450px;
+    margin-bottom: 40px;
+}
+
 .img-fluid.bg-image {
     /* Estilos para la imagen de fondo */
     width: 900px; /* Mantener el ancho automático */
@@ -223,6 +239,23 @@ footer {
     .overlay-text {
         font-size: 10px; /* Adjust the font size as needed */
     }
+    .bg-image3 {
+        display: none; /* Oculta los container.png */
+    }
+    
+    .project-container {
+        text-align: center; /* Centra los videos */
+    }
+
+    .project-container iframe, .project-container video {
+            max-width: 100%; /* Hace que los videos sean responsivos */
+            top: 0;
+            left: 0;
+            height: 390px;
+        
+    }
+   
+    
 }
         /* Estilo para el contenedor del GIF */
         #gif-container {
@@ -256,3 +289,88 @@ footer {
                 pointer-events: none; /* Deshabilita la interacción con el contenido */
             }
         }
+
+/* CSS para la sección de Portfolio */
+#portfolio {
+    text-align: center;
+}
+
+/* Estilo para el título de la sección */
+#portfolio h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los contenedores de videos y PNG */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para los videos responsivos */
+/* Estilo para los videos responsivos */
+iframe,
+video {
+   
+    display: block;
+    margin: 0 auto;
+}
+.project-container {
+    
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.project-container iframe,
+.project-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 76PX;
+    width: 680px; /* Mantener el ancho automático */
+    height: 390px;
+}
+
+
+/* Estilos para los iconos y la sección de Gallery */
+
+/*/* Estilos para los iconos y la sección de Gallery */
+.icon-square2 {
+    width: 100px; 
+    height: auto;
+    display: inline-block; /* Cambiamos a inline-block para que estén lado a lado */
+    margin-right: 10px; /* Ajustamos el margen derecho para separación */
+}
+
+#gallery {
+    padding: 20px;
+}
+
+/* Estilos para el contenedor de la galería y los iconos adicionales */
+.gallery-bg {
+    position: relative;
+}
+
+#additional-icons {
+    position: absolute;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#additional-icons .icon-square2 {
+    width: 100px;
+    height: auto;
+    display: inline-block; /* Cambiamos a inline-block para que estén lado a lado */
+    margin-right: 10px; /* Ajustamos el margen derecho para separación */
+}
